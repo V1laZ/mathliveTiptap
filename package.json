@@ -1,0 +1,21 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@types/node": "^18",
+    "nuxt": "^3.4.2"
+  },
+  "dependencies": {
+    "@tiptap/pm": "^2.0.3",
+    "@tiptap/starter-kit": "^2.0.3",
+    "@tiptap/vue-3": "^2.0.3",
+    "mathlive": "^0.92.1"
+  }
+}
