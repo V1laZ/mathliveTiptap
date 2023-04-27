@@ -1,8 +1,6 @@
 <template>
     <node-view-wrapper>
-        <math-field style="width: 350px;" ref="mathfield">
-            {{ node.attrs.latex }}
-        </math-field>
+        <math-field style="width: 350px;" ref="mathfield"></math-field>
     </node-view-wrapper>
 </template>
   
@@ -17,6 +15,8 @@ export default {
         NodeViewWrapper,
     },
     mounted() {
+        this.$refs.mathfield.setValue(this.node.attrs.latex)
+
         this.$refs.mathfield.addEventListener("input", (ev) => {
             this.updateAttributes({ latex: ev.target.value })
         })
